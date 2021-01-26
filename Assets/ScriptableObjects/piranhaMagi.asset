@@ -9,14 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 43e42cf482929e1488ee7cf5247badbb, type: 3}
   m_Name: piranhaMagi
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDefinition
+  m_EditorClassIdentifier: 
   gameDev: 0
   portrait: {fileID: 0}
-  role: Designer/Programmer
+  role: designer/programmer
   skills:
   - being cool
   - design
-  - programming
-  - project management
