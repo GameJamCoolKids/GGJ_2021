@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class Enums
 {
-    public enum GameDevs
+    public enum GameDev
     {
         piranhaMagi,
         panini,
