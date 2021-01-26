@@ -7,7 +7,7 @@ using UnityEngine;
 
 [System.Serializable]
 [CreateAssetMenu(fileName = "New GameDev", menuName = "GameDev")]
-public class EnemyDefinition : ScriptableObject
+public class GameDevDefinition : ScriptableObject
 {
     public Enums.GameDev gameDev;
     public Sprite portrait;
