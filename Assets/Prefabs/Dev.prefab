@@ -133,5 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08d009ccd8927d45806f6f4048f71b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2D: {fileID: 0}
+  rb2D: {fileID: 2268502840603798547}
   pushHeight: 7
