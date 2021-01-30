@@ -8,6 +8,7 @@ public class RecipeUIBehavior : MonoBehaviour
     
 {
     public GameObject RecipeUI;
+    public GameObject GameController;
     // Start is called before the first frame update
     void Start()
     {
