@@ -19,9 +19,10 @@ public class RecipeUIBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get the instruction from the Level
+        // Get the instruction from the GameController
 
-        // Display the instruction in the UI
+
+
 
         // Toggle the RecipeUI on/off based on tab keyboard press
         if (Input.GetKeyDown("tab"))
