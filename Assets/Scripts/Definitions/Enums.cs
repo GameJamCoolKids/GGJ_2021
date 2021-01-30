@@ -33,4 +33,5 @@ public static class Enums
         RubberDuck,
         Stake,
         Dentures,
+    }
 }
