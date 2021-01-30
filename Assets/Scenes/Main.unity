@@ -5322,6 +5322,7 @@ GameObject:
   - component: {fileID: 494908527}
   - component: {fileID: 494908529}
   - component: {fileID: 494908528}
+  - component: {fileID: 494908530}
   m_Layer: 5
   m_Name: RecipeBookBTN
   m_TagString: Untagged
@@ -5337,8 +5338,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494908526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.343, y: -4.932, z: 0}
-  m_LocalScale: {x: -7.6136713, y: -7.0555754, z: -1.631464}
+  m_LocalPosition: {x: -7.3699994, y: -4.89, z: 17}
+  m_LocalScale: {x: -7.613671, y: -7.0555754, z: 1}
   m_Children: []
   m_Father: {fileID: 811037827}
   m_RootOrder: 3
@@ -5394,7 +5395,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5406,6 +5407,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &494908530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494908526}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &811037826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,7 +5567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &904153804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5558,8 +5585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.831, y: -3.102}
-  m_SizeDelta: {x: 17.778004, y: 5.254429}
+  m_AnchoredPosition: {x: 0.776, y: -3.102}
+  m_SizeDelta: {x: 14.63648, y: 5.254429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904153805
 MonoBehaviour:
