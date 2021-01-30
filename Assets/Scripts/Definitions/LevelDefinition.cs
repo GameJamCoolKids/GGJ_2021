@@ -12,6 +12,8 @@ public class LevelDefinition : ScriptableObject
     public class Instruction
     {
         public string instruction;
+        public string hint;
         public Enums.Ingredient correctIngredient;
     }
+
 }
