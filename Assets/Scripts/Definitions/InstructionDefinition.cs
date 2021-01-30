@@ -9,6 +9,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Instruction", menuName = "Instruction")]
 public class InstructionDefinition : ScriptableObject
 {
-    public Enums.Ingredient correctIngredient;
     public string instruction;
+    public Enums.Ingredient correctIngredient;
 }
