@@ -8,11 +8,24 @@ public class RecipeUIBehavior : MonoBehaviour
     void Start()
     {
         
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Get the instruction from the Level
+
+        // Display the instruction in the UI
+
+
+    }
+
+    private void OnMouseDown()
+    {
+        // Pull up the Recipe Game Object
+
+
     }
 }
