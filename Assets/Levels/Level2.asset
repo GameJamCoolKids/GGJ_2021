@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   instructions:
-  - instruction: 
-    correctIngredient: 0
-  - instruction: 
-    correctIngredient: 0
-  - instruction: 
-    correctIngredient: 0
+  - instruction: I thought it was them the whole time but it turned out to be the
+      butler!
+    hint: 
+    correctIngredient: 15
+  - instruction: Words of the wise
+    hint: A friend can help you a lot if you just ask
+    correctIngredient: 24
+  - instruction: A companion for exploring indoor ponds
+    hint: 
+    correctIngredient: 20
