@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Level", menuName = "Level")]
 public class LevelDefinition : ScriptableObject
 {
+    public int levelOrder;
     public List<Instruction> instructions;
 
     [System.Serializable]
