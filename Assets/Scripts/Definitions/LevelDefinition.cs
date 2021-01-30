@@ -4,17 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 [CreateAssetMenu(fileName = "New Instruction", menuName = "Instruction")]
-public class LevelDefinition : MonoBehaviour
+public class LevelDefinition : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<InstructionDefinition> instructions;
 }
