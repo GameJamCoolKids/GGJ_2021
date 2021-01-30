@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Level5
   m_EditorClassIdentifier: 
   instructions:
-  - instruction: Its not very often I get to use these
-    hint: I once gave this to a suspected werewolf, they holwed!
+  - instruction: Balloon popper for the short giraffes
+    hint: It pokes holes in all the hats they wear
     correctIngredient: 3
-  - instruction: Small hats for the forest folk
-    hint: Some say they are stools for fairies. Thats a common misnomer.
+  - instruction: The look ok but I have always know they weren't right
+    hint: 
     correctIngredient: 19
-  - instruction: I get hot just looking at them
-    hint: They sure are sweet though
+  - instruction: I was going to exchange them for pennies
+    hint: The piggy bank of the mind
     correctIngredient: 6
