@@ -23,12 +23,18 @@ public class RecipeUIBehavior : MonoBehaviour
 
         // Display the instruction in the UI
 
+        // Toggle the RecipeUI on/off based on tab keyboard press
+        if (Input.GetKeyDown("tab"))
+        {
+            RecipeUI.SetActive(!RecipeUI.activeInHierarchy);
+        }
+
 
     }
 
     private void OnMouseDown()
     {
-        // Pull up the Recipe Game Object
+        // Toggle the RecipeUI on/off based on mouse click
         RecipeUI.SetActive(!RecipeUI.activeInHierarchy);
 
 
