@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d693760d36b78c149a9488e47475bcd8, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
+  levelOrder: 2
   instructions:
   - instruction: I thought it was them the whole time but it turned out to be the
       butler!
