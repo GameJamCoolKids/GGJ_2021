@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "New GameDev", menuName = "GameDev")]
-public class GameDevDefinition : ScriptableObject
+[CreateAssetMenu(fileName = "New Ingredient", menuName = "Ingredient")]
+public class IngredientDefinition : ScriptableObject
 {
     public Enums.GameDev gameDev;
     public Sprite portrait;
