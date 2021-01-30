@@ -6,5 +6,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Level", menuName = "Level")]
 public class LevelDefinition : ScriptableObject
 {
-    public List<InstructionDefinition> instructions;
+    public List<Instruction> instructions;
+
+    [System.Serializable]
+    public class Instruction
+    {
+        public string instruction;
+        public Enums.Ingredient correctIngredient;
+    }
 }

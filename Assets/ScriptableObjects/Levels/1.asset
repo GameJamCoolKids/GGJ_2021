@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   instructions:
-  - {fileID: 11400000, guid: 53fa1b9669034f14b8d52f82da4190d9, type: 2}
-  - {fileID: 11400000, guid: 4f4b429974153c3469ae9fc081f8bb7f, type: 2}
-  - {fileID: 11400000, guid: d8988b87a8f7e3846815e5a229a71679, type: 2}
+  - instruction: "I couldn\u2019t find the boneless ones"
+    correctIngredient: 1
+  - instruction: Balloon popper for the short giraffes
+    correctIngredient: 2
+  - instruction: I was going to build my next house of these
+    correctIngredient: 3
+  - instruction: I thought it was them the whole time but it turned out to be the
+      butler!
+    correctIngredient: 4
+  - instruction: I hate using these, I keep putting it off
+    correctIngredient: 5
+  - instruction: Its not very often I get to use these
+    correctIngredient: 6
