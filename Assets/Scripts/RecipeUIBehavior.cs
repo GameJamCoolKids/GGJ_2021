@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RecipeUIBehavior : MonoBehaviour
+
+
+    
 {
+    public GameObject RecipeUI;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +30,7 @@ public class RecipeUIBehavior : MonoBehaviour
     private void OnMouseDown()
     {
         // Pull up the Recipe Game Object
+        
 
 
     }

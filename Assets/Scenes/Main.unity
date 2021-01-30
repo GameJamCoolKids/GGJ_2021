@@ -5355,6 +5355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b48ebecf9f60ae4188e454297890c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RecipeUI: {fileID: 904153803}
 --- !u!212 &494908529
 SpriteRenderer:
   m_ObjectHideFlags: 0
