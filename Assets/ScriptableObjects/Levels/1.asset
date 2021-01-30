@@ -14,15 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructions:
   - instruction: "I couldn\u2019t find the boneless ones"
-    correctIngredient: 1
+    correctIngredient: 0
   - instruction: Balloon popper for the short giraffes
-    correctIngredient: 2
+    correctIngredient: 4
   - instruction: I was going to build my next house of these
-    correctIngredient: 3
+    correctIngredient: 7
   - instruction: I thought it was them the whole time but it turned out to be the
       butler!
-    correctIngredient: 4
+    correctIngredient: 15
   - instruction: I hate using these, I keep putting it off
-    correctIngredient: 5
+    correctIngredient: 16
   - instruction: Its not very often I get to use these
+    correctIngredient: 19
+  - instruction: The look ok but I have always know they weren't right
+    correctIngredient: 21
+  - instruction: The look ok but I have always know they weren't right
+    correctIngredient: 21
+  - instruction: I liked mine rare but these always tasted well done
+    correctIngredient: 23
+  - instruction: Words of the wise
+    correctIngredient: 8
+  - instruction: A companion for exploring indoor ponds
+    correctIngredient: 22
+  - instruction: Small hats for the forest folk
     correctIngredient: 6
