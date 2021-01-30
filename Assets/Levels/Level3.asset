@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Level3
   m_EditorClassIdentifier: 
   instructions:
-  - instruction: 
-    correctIngredient: 0
-  - instruction: 
-    correctIngredient: 0
-  - instruction: 
+  - instruction: I mean to make more but I keep putting it off for later
+    hint: They make my teeth hurt
+    correctIngredient: 14
+  - instruction: "Everything I buy doesn\u2019t have any so i needed to make my own"
+    hint: 
+    correctIngredient: 11
+  - instruction: They needed to be changed so often because they get rusty very fast
+    hint: How much running could they do underwater?
     correctIngredient: 0
