@@ -19,5 +19,5 @@ MonoBehaviour:
     hint: 
     correctIngredient: 15
   - instruction: -Small hats for the forest folk
-    hint: Some say they are stools for fairies. Thats a common misnomer.
+    hint: Some say they are stools for fairies. That's a common misnomer.
     correctIngredient: 5
