@@ -361,6 +361,7 @@ MonoBehaviour:
   levelEndPopUp: {fileID: 1016790725}
   currentLevel: {fileID: 0}
   incorrectAttempts: 0
+  correctAnswers: 0
   playerWonLevel: 0
   levelFinished: 0
 --- !u!4 &370790121
@@ -1021,6 +1022,7 @@ MonoBehaviour:
   gameController: {fileID: 370790120}
   levelEndHeaderTmp: {fileID: 329135054}
   levelEndButtonTmp: {fileID: 2071702443}
+  button: {fileID: 402608478}
 --- !u!1 &1379850896
 GameObject:
   m_ObjectHideFlags: 0
