@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75c3f9b0ed59e842a16fd3c35dc31e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ATTEMPTS_UNTIL_GAME_OVER: 3
   levels:
   - {fileID: 11400000, guid: cc23ca1c9d11e604caa53201b7d7bd36, type: 2}
   - {fileID: 11400000, guid: e619ca47f9d5a4f429780bb12d0dd89a, type: 2}
@@ -317,7 +318,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 02761b8d1a683c54b9a7dca9739836d5, type: 2}
   - {fileID: 11400000, guid: 27c98613b22133e4d8dcfd41c4c017e1, type: 2}
   currentLevel: {fileID: 0}
-  attempts: 0
+  incorrectAttempts: 0
   playerWonLevel: 0
 --- !u!4 &370790121
 Transform:
@@ -1298,6 +1299,11 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 370790120}
+    - target: {fileID: 6236545527459181553, guid: 3f299bacd3a7af14a8e50e63e74ee24e,
+        type: 3}
+      propertyPath: cauldronAnimator
+      value: 
+      objectReference: {fileID: 1145941985}
     - target: {fileID: 8643046472736315043, guid: 3f299bacd3a7af14a8e50e63e74ee24e,
         type: 3}
       propertyPath: m_Name
@@ -1308,6 +1314,12 @@ PrefabInstance:
 --- !u!4 &1145941984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5741375199304938923, guid: 3f299bacd3a7af14a8e50e63e74ee24e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1145941983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1145941985 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 335044581, guid: 3f299bacd3a7af14a8e50e63e74ee24e,
     type: 3}
   m_PrefabInstance: {fileID: 1145941983}
   m_PrefabAsset: {fileID: 0}
