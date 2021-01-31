@@ -1,6 +1,7 @@
 ﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -21,6 +22,11 @@ public class Ingredient : MonoBehaviour
     }
 
     void OnMouseDown() {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         rigidBody2D.bodyType = RigidbodyType2D.Dynamic;
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
 

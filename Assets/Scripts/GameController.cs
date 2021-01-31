@@ -8,13 +8,17 @@ public class GameController : MonoBehaviour
 
     public List<LevelDefinition> levels;
     public GameObject levelEndPopUp;
+    public Animator CauldronAnim;
     [HideInInspector] public LevelDefinition currentLevel;
     [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
+    [HideInInspector] public int correctAnswers; // number of correct answers per level
     [HideInInspector] public bool playerWonLevel;
     [HideInInspector] public bool levelFinished;
 
     private void Start()
     {
+        correctAnswers = 0;
+        incorrectAttempts = 0;
         levelFinished = false;
         levelEndPopUp.SetActive(false);
         currentLevel = levels[0];
@@ -23,12 +27,19 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        if (correctAnswers >= 3)
+        {
+            levelFinished = true;
+            playerWonLevel = true;
+        }
+        else if (incorrectAttempts >= 3)
+        {
+            levelFinished = true;
+            playerWonLevel = false;
+        }
+
         if (levelFinished)
         {
-            incorrectAttempts = 0; // reset
-            playerWonLevel = false; // reset
-            levelFinished = false; // reset
-            levelEndPopUp.SetActive(false); // reset
             if (playerWonLevel)
             {
                 int nextLevel = currentLevel.levelOrder + 1;
@@ -38,17 +49,22 @@ public class GameController : MonoBehaviour
                     StartLevel(currentLevel);
                 }
             }
-            else
+            else // defeat
             {
                 levelEndPopUp.SetActive(true);
+                // start level is called by pressing the TryAagain button in the UI after defeat
             }
         }
     }
-
-    // sets the win and loss conditions for the level
+    
     public void StartLevel(LevelDefinition level)
     {
-
+        levelEndPopUp.SetActive(false); // reset
+        correctAnswers = 0; // reset
+        incorrectAttempts = 0; // reset
+        playerWonLevel = false; // reset
+        levelFinished = false; // reset
+        CauldronAnim.SetTrigger("BacktoNormal");
     }
 
     // current level that is active in the scene, can get currentLevel properties such as instructions, etc
@@ -65,5 +81,20 @@ public class GameController : MonoBehaviour
     public int GetIncorrectAttempts()
     {
         return incorrectAttempts;
+    }
+
+    public void IncrementCorrectAnswers()
+    {
+        correctAnswers += 1;
+    }
+
+    public int GetNumberOfCorrectAnswers()
+    {
+        return correctAnswers;
+    }
+
+    public bool IsLevelFinished()
+    {
+        return levelFinished;
     }
 }
