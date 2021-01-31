@@ -397,7 +397,7 @@ ScriptedImporter:
     - {x: 12, y: 23}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -32, y: 545}
+    uvTransform: {x: -21, y: 534}
   - name: eyes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
