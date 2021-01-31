@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 7
   instructions:
-  - instruction: -Balloon popper for the short giraffes
-    hint: It pokes holes in all the hats they wear
+  - instruction: '- Balloon popper for the short giraffes'
+    hint: It pokes holes in all the hats they wear.
     correctIngredient: 3
-  - instruction: -I was going to build my next house out of these ** going to add
-      a sound to help
-    hint: a relic from the distant past of 1999
+  - instruction: '- I was going to build my next house out of these.'
+    hint: A relic from the distant past of 1999.
     correctIngredient: 8

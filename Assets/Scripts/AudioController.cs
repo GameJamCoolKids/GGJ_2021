@@ -20,7 +20,7 @@ public class AudioController : MonoBehaviour
 
         _music = new List<AudioSource>()
         {
-            LobbyMusic, BoilAndBubble
+            LobbyMusic, BoilAndBubble,
         };
     }
 }

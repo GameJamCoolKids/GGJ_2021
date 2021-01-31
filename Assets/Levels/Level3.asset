@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 3
   instructions:
-  - instruction: -Words of the wise
-    hint: A friend can help you a lot if you just ask
-    correctIngredient: 24
-  - instruction: "-Everything I buy doesn\u2019t have any so i needed to make my
-      own"
-    hint: 
+  - instruction: '- What is the best thing to put into pies?'
+    hint: Eww, I wouldn't touch those.
+    correctIngredient: 25
+  - instruction: "- Everything I buy doesn\u2019t have any, so i had to make my own"
+    hint: Seems like everyone is allergic to this these days...
     correctIngredient: 11
