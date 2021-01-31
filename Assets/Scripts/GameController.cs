@@ -34,11 +34,15 @@ public class GameController : MonoBehaviour
         {
             levelFinished = true;
             playerWonLevel = true;
+            CauldronAnim.SetTrigger("Level_Won");
+            Debug.Log("Level Won");
         }
         else if (incorrectAttempts >= 3)
         {
             levelFinished = true;
             playerWonLevel = false;
+            CauldronAnim.SetTrigger("Level_Lost");
+            Debug.Log("Level Lost");
         }
 
         if (levelFinished)
