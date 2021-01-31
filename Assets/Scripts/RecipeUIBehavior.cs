@@ -16,6 +16,7 @@ public class RecipeUIBehavior : MonoBehaviour
     private string inst1;
     private string inst2;
     private string inst3;
+    AudioSource audioData;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,9 @@ public class RecipeUIBehavior : MonoBehaviour
         // Toggle the RecipeUI on/off based on mouse click
         RecipeUI.SetActive(!RecipeUI.activeInHierarchy);
 
-
+        // Play the audio FX
+        audioData = GetComponent<AudioSource>();
+        audioData.Play(0);
+        Debug.Log("recipe audio started");
     }
 }
