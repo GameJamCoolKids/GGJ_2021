@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d693760d36b78c149a9488e47475bcd8, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  levelOrder: 1
+  levelOrder: 0
   instructions:
   - instruction: '- It''s not very often that I get to use it...'
     hint: I once gave this to a werewolf, he holwed!
