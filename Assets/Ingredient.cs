@@ -23,6 +23,13 @@ public class Ingredient : MonoBehaviour
     void OnMouseDown() {
         rigidBody2D.bodyType = RigidbodyType2D.Dynamic;
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+
+        // deactivate recipe ui
+        GameObject recipeUI = GameObject.Find("RecipeBook");
+        if (recipeUI && recipeUI.activeSelf)
+        {
+            recipeUI.SetActive(false);
+        }
     }
 
     void OnMouseDrag()
