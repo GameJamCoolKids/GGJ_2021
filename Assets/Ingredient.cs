@@ -49,10 +49,13 @@ public class Ingredient : MonoBehaviour
     }
 
     // Disable the behaviour when it becomes invisible...
-    void OnBecameInvisible()
+    private void Update()
     {
-        CloneGameObject();
-        Destroy(gameObject);
+        if (transform.position.y < -20)
+        {
+            CloneGameObject();
+            Destroy(gameObject);
+        }
     }
 
     // create another instance of the game object in scene
