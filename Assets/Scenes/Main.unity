@@ -358,9 +358,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1851e00f210160640af1debf33196bc6, type: 2}
   - {fileID: 11400000, guid: 02761b8d1a683c54b9a7dca9739836d5, type: 2}
   - {fileID: 11400000, guid: 27c98613b22133e4d8dcfd41c4c017e1, type: 2}
+  levelEndPopUp: {fileID: 1016790725}
   currentLevel: {fileID: 0}
   incorrectAttempts: 0
   playerWonLevel: 0
+  levelFinished: 0
 --- !u!4 &370790121
 Transform:
   m_ObjectHideFlags: 0
