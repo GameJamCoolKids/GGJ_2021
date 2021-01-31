@@ -37,6 +37,34 @@ public class RecipeUIBehavior : MonoBehaviour
         instruction3.SetText(inst3);
 
 
+        if(GameController.instruction1Solved == true)
+        {
+            instruction1.color = new Color32(34, 139, 34, 255);
+
+        }
+
+        if (GameController.instruction2Solved == true)
+        {
+            instruction2.color = new Color32(34, 139, 34, 255);
+
+        }
+
+        if (GameController.instruction3Solved == true)
+        {
+            instruction3.color = new Color32(34, 139, 34, 255);
+
+        }
+
+        if(GameController.correctAnswers >= 3 || GameController.incorrectAttempts >= 3)
+        {
+            instruction1.color = new Color32(0, 0, 0, 255);
+            instruction2.color = new Color32(0, 0, 0, 255);
+            instruction3.color = new Color32(0,0,0,255);
+
+
+        }
+
+
         // Toggle the RecipeUI on/off based on tab keyboard press
         if (Input.GetKeyDown("tab"))
         {
@@ -46,6 +74,7 @@ public class RecipeUIBehavior : MonoBehaviour
 
 
     }
+
 
     private void OnMouseDown()
     {
