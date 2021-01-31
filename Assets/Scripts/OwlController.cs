@@ -10,11 +10,10 @@ public class OwlController : MonoBehaviour
     private string hint1;
     private string hint2;
     private string hint3;
-    public TextMeshProUGUI textbox1;
-    public TextMeshProUGUI textbox2;
-    public TextMeshProUGUI textbox3;
+    public TextMeshProUGUI textbox;
     public GameObject textBoxPrefab;
     private bool collider_switch;
+    public Animator owlAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +36,7 @@ public class OwlController : MonoBehaviour
         }
         collider_switch = false;
         audioController.OwlHoot.PlayOneShot(audioController.OwlHoot.clip);
+        owlAnim.SetTrigger("OwlClicked");
         // Getting the hint
         LevelDefinition level = GameController.GetCurrentLevel();
         hint1 = level.instructions[0].hint;
