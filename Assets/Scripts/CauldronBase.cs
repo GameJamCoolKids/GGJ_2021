@@ -18,18 +18,21 @@ public class CauldronBase : MonoBehaviour
         {
             // trigger the 'correct' animation HERE
             CauldronAnim.SetTrigger("PotionCorrect");
+            Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
         else if (ingredientController.ingredient == level.instructions[1].correctIngredient)
         {
             // trigger the 'correct' animation HERE
             CauldronAnim.SetTrigger("PotionCorrect");
+            Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
         else if (ingredientController.ingredient == level.instructions[2].correctIngredient)
         {
             // trigger the 'correct' animation HERE
             CauldronAnim.SetTrigger("PotionCorrect");
+            Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
         else
@@ -38,13 +41,15 @@ public class CauldronBase : MonoBehaviour
             if (gameController.GetIncorrectAttempts() >= gameController.ATTEMPTS_UNTIL_GAME_OVER)
             {
                 // trigger the 'incorrect' animation HERE
-                CauldronAnim.SetTrigger("PotionIncorrect");
+                CauldronAnim.SetTrigger("Potion_Incorrect");
+                Debug.Log("Incorrect Ingredient Detected");
                 // trigger mark off of of book
             }
             else
             {
                 // trigger the 'dud' animation HERE
                 CauldronAnim.SetTrigger("BacktoNormal");
+                Debug.Log("Dud Ingredient Detected");
                 // trigger mark off of of book
             }
         }
