@@ -10,11 +10,10 @@ public class OwlController : MonoBehaviour
     private string hint1;
     private string hint2;
     private string hint3;
-    public TextMeshProUGUI textbox1;
-    public TextMeshProUGUI textbox2;
-    public TextMeshProUGUI textbox3;
     public GameObject textBoxPrefab;
     private bool collider_switch;
+    public Animator owlAnim;
+    private string current_hint = "placeholder";
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +36,7 @@ public class OwlController : MonoBehaviour
         }
         collider_switch = false;
         audioController.OwlHoot.PlayOneShot(audioController.OwlHoot.clip);
+        owlAnim.SetTrigger("OwlClicked");
         // Getting the hint
         LevelDefinition level = GameController.GetCurrentLevel();
         hint1 = level.instructions[0].hint;
@@ -44,12 +44,15 @@ public class OwlController : MonoBehaviour
         hint3 = level.instructions[2].hint;
 
         // Get progress from game controller and pick the appropriate hint
-        // Logic: pick the highest hint that the player hasn't correctly completed
 
+
+        // Logic: pick the highest hint that the player hasn't correctly completed
+        
 
         // Instantiating the text box for the hint
         // X = 3.78, Y = 3.86, Z = 18.4
         GameObject instantiatedOwlText = Instantiate(textBoxPrefab, new Vector3(3.78f, 3.86f, 18.47f), Quaternion.identity);
+        instantiatedOwlText.GetComponentInChildren<TextMeshProUGUI>().SetText(current_hint);
         Object.Destroy(instantiatedOwlText, 4.0f);
         StartCoroutine(OwlLag());
 

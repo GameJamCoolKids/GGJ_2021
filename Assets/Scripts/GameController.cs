@@ -7,27 +7,40 @@ public class GameController : MonoBehaviour
     public int ATTEMPTS_UNTIL_GAME_OVER = 3;
 
     public List<LevelDefinition> levels;
+    public GameObject levelEndPopUp;
     [HideInInspector] public LevelDefinition currentLevel;
     [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
     [HideInInspector] public bool playerWonLevel;
+    [HideInInspector] public bool levelFinished;
 
     private void Start()
     {
+        levelFinished = false;
+        levelEndPopUp.SetActive(false);
         currentLevel = levels[0];
         StartLevel(currentLevel);
     }
 
     private void Update()
     {
-        if (playerWonLevel)
+        if (levelFinished)
         {
-            int nextLevel = currentLevel.levelOrder + 1;
-            if (nextLevel < levels.Count)
+            incorrectAttempts = 0; // reset
+            playerWonLevel = false; // reset
+            levelFinished = false; // reset
+            levelEndPopUp.SetActive(false); // reset
+            if (playerWonLevel)
             {
-                currentLevel = levels[nextLevel];
-                incorrectAttempts = 0; // reset
-                playerWonLevel = false; // reset
-                StartLevel(currentLevel);
+                int nextLevel = currentLevel.levelOrder + 1;
+                if (nextLevel < levels.Count)
+                {
+                    currentLevel = levels[nextLevel];
+                    StartLevel(currentLevel);
+                }
+            }
+            else
+            {
+                levelEndPopUp.SetActive(true);
             }
         }
     }
