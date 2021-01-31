@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 1
   instructions:
-  - instruction: -Its not very often I get to use these
-    hint: I once gave this to a suspected werewolf, they holwed!
+  - instruction: '- It''s not very often that I get to use it...'
+    hint: I once gave this to a werewolf, he holwed!
     correctIngredient: 17
-  - instruction: -I get hot just looking at them
-    hint: They sure are sweet though
+  - instruction: '- I get hot just looking at ''em!'
+    hint: They sure are sweet though.
     correctIngredient: 18

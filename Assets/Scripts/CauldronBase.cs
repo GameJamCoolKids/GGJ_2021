@@ -9,9 +9,11 @@ public class CauldronBase : MonoBehaviour
 {
     public GameController gameController;
     public Animator CauldronAnim;
+    public AudioSource audioSource;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        audioSource.PlayOneShot(audioSource.clip);
         LevelDefinition level = gameController.GetCurrentLevel();
         Ingredient ingredientController = collision.gameObject.GetComponent<Ingredient>();
         if (ingredientController.ingredient == level.instructions[0].correctIngredient
