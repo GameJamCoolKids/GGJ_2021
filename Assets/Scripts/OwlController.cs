@@ -15,4 +15,10 @@ public class OwlController : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Owl Clicked");
+
+    }
 }
