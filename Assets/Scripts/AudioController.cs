@@ -4,7 +4,7 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public AudioSource LobbyMusic;
-    public AudioSource MandrakeSound;
+    public AudioSource BookFlip;
 
     private List<AudioSource> _soundEffects;
     private List<AudioSource> _music;
@@ -13,7 +13,7 @@ public class AudioController : MonoBehaviour
     {
         _soundEffects = new List<AudioSource>()
         {
-           MandrakeSound,
+           BookFlip,
         };
 
         _music = new List<AudioSource>()
