@@ -10,10 +10,17 @@ public class LevelEndPopUp : MonoBehaviour
     public TextMeshProUGUI levelEndHeaderTmp;
     public TextMeshProUGUI levelEndButtonTmp;
     public Button button;
+    public GameObject screenDimmer;
 
     private void Start()
     {
+        screenDimmer.SetActive(true);
         button.onClick.AddListener(delegate {
             gameController.StartLevel(gameController.GetCurrentLevel()); });
+    }
+
+    private void OnDisable()
+    {
+        screenDimmer.SetActive(false);
     }
 }
