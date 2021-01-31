@@ -9,6 +9,7 @@ public class Ingredient : MonoBehaviour
 {
     public Enums.Ingredient ingredient;
     public Rigidbody2D rigidBody2D;
+    public AudioSource audioSource;
 
     private Vector3 screenPoint;
     private Vector3 offset;
@@ -27,6 +28,8 @@ public class Ingredient : MonoBehaviour
         {
             return;
         }
+
+        audioSource.PlayOneShot(audioSource.clip);
         rigidBody2D.bodyType = RigidbodyType2D.Dynamic;
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
 

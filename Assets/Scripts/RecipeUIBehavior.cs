@@ -10,10 +10,8 @@ public class RecipeUIBehavior : MonoBehaviour
     public GameController GameController;
     public TextMeshProUGUI instruction1;
     public TextMeshProUGUI instruction2;
-    public TextMeshProUGUI instruction3;
     private string inst1;
     private string inst2;
-    private string inst3;
 
     // Start is called before the first frame update
     void Start()
@@ -33,8 +31,6 @@ public class RecipeUIBehavior : MonoBehaviour
         instruction1.SetText(inst1);
         inst2 = level.instructions[1].instruction;
         instruction2.SetText(inst2);
-        inst3 =  level.instructions[2].instruction;
-        instruction3.SetText(inst3);
 
 
         if(GameController.instruction1Solved == true)
@@ -49,17 +45,12 @@ public class RecipeUIBehavior : MonoBehaviour
 
         }
 
-        if (GameController.instruction3Solved == true)
-        {
-            instruction3.color = new Color32(34, 139, 34, 255);
 
-        }
-
-        if(GameController.correctAnswers >= 3 || GameController.incorrectAttempts >= 3)
+        if(GameController.correctAnswers >= 2 || GameController.incorrectAttempts >= 3)
         {
             instruction1.color = new Color32(0, 0, 0, 255);
             instruction2.color = new Color32(0, 0, 0, 255);
-            instruction3.color = new Color32(0,0,0,255);
+
 
 
         }
