@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d693760d36b78c149a9488e47475bcd8, type: 3}
-  m_Name: Level2
+  m_Name: Level7
   m_EditorClassIdentifier: 
-  levelOrder: 2
+  levelOrder: 7
   instructions:
-  - instruction: -I thought it was them the whole time but it turned out to be the
-      butler!
-    hint: 
-    correctIngredient: 15
-  - instruction: -Small hats for the forest folk
-    hint: Some say they are stools for fairies. Thats a common misnomer.
-    correctIngredient: 5
+  - instruction: -Balloon popper for the short giraffes
+    hint: It pokes holes in all the hats they wear
+    correctIngredient: 3
+  - instruction: -I was going to build my next house out of these ** going to add
+      a sound to help
+    hint: a relic from the distant past of 1999
+    correctIngredient: 8
