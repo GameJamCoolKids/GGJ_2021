@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
+    public Enums.Ingredient ingredient;
+
     private Vector3 screenPoint;
     private Vector3 offset;
 
