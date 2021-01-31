@@ -40,16 +40,16 @@ public class CauldronBase : MonoBehaviour
             gameController.IncrementIncorrectAttempts();
             if (gameController.GetIncorrectAttempts() >= gameController.ATTEMPTS_UNTIL_GAME_OVER)
             {
-                // trigger the 'incorrect' animation HERE
+                // trigger the 'fail' animation HERE
                 CauldronAnim.SetTrigger("Potion_Incorrect");
                 Debug.Log("Incorrect Ingredient Detected");
                 // trigger mark off of of book
             }
             else
             {
-                // trigger the 'dud' animation HERE
-                CauldronAnim.SetTrigger("BacktoNormal");
-                Debug.Log("Dud Ingredient Detected");
+                // trigger the 'incorret' animation HERE
+                CauldronAnim.SetTrigger("Potion_Incorrect");
+                Debug.Log("Incorrect Ingredient Detected");
                 // trigger mark off of of book
             }
         }
