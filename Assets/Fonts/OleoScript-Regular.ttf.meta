@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e808dba32c8ea504e9a2607d935ade7b
+guid: be4fb45e5d1e1664b8c6c828119d38b8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,11 +8,11 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Tangerine
+  fontName: Oleo Script
   fontNames:
-  - Tangerine
+  - Oleo Script
   fallbackFontReferences:
-  - {fileID: 12800000, guid: 257064eb39afb4d4082e943a0d496a73, type: 3}
+  - {fileID: 12800000, guid: 9b6c8ab807d213f4fb7431b519933aa4, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
