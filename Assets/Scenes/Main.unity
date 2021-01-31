@@ -187,6 +187,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &353129898 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 743374844025818551, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7757864455312328221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &370790119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1235,27 @@ PrefabInstance:
       propertyPath: audioController
       value: 
       objectReference: {fileID: 1379850899}
+    - target: {fileID: 595196840172559444, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: textBoxPrefab
+      value: 
+      objectReference: {fileID: 2183667038125767816, guid: eb7cb50e5d527aa4cba94fa8b090237e,
+        type: 3}
+    - target: {fileID: 595196840172559444, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: GameController
+      value: 
+      objectReference: {fileID: 370790120}
+    - target: {fileID: 595196840172559444, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: owlAnim
+      value: 
+      objectReference: {fileID: 353129898}
+    - target: {fileID: 743374844025818551, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 77eeeda8fa9e9f34aaed47243131c7ee, type: 2}
     - target: {fileID: 1105719018169500736, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
