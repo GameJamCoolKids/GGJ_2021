@@ -2772,6 +2772,11 @@ PrefabInstance:
       propertyPath: ingredient
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 2073443500674493732, guid: 52205e6dc554f6e4085ed167426bdce6,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e0ab4cd1397acc24892134a505e513ba, type: 3}
     - target: {fileID: 4762477307595196733, guid: 52205e6dc554f6e4085ed167426bdce6,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
