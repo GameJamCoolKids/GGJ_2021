@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 4
   instructions:
-  - instruction: "I couldn\u2019t find the boneless ones"
+  - instruction: "-I couldn\u2019t find the boneless ones"
     hint: it was easy getting them from chicken or buffalo
     correctIngredient: 7
-  - instruction: I liked mine rare but these always tasted well done
+  - instruction: -I liked mine rare but these always tasted well done
     hint: Not reccomended for eating
     correctIngredient: 21
-  - instruction: The little people that are scared of light and fond of the soil
+  - instruction: -The little people that are scared of light and fond of the soil
     hint: look for disturbed soil around the leaves if you want to find one of these
     correctIngredient: 4

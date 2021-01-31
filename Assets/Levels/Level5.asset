@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 5
   instructions:
-  - instruction: Balloon popper for the short giraffes
+  - instruction: -Balloon popper for the short giraffes
     hint: It pokes holes in all the hats they wear
     correctIngredient: 3
-  - instruction: The look ok but I have always know they weren't right
+  - instruction: -The look ok but I have always know they weren't right
     hint: 
     correctIngredient: 19
-  - instruction: I was going to exchange them for pennies
+  - instruction: -I was going to exchange them for pennies
     hint: The piggy bank of the mind
     correctIngredient: 6

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 2
   instructions:
-  - instruction: I thought it was them the whole time but it turned out to be the
+  - instruction: -I thought it was them the whole time but it turned out to be the
       butler!
     hint: 
     correctIngredient: 15
-  - instruction: Words of the wise
+  - instruction: -Words of the wise
     hint: A friend can help you a lot if you just ask
     correctIngredient: 24
-  - instruction: A companion for exploring indoor ponds
+  - instruction: -A companion for exploring indoor ponds
     hint: 
     correctIngredient: 20
