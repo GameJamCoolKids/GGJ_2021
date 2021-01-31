@@ -17,21 +17,21 @@ public class CauldronBase : MonoBehaviour
         if (ingredientController.ingredient == level.instructions[0].correctIngredient)
         {
             // trigger the 'correct' animation HERE
-            CauldronAnim.SetTrigger("PotionCorrect");
+            CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
         else if (ingredientController.ingredient == level.instructions[1].correctIngredient)
         {
             // trigger the 'correct' animation HERE
-            CauldronAnim.SetTrigger("PotionCorrect");
+            CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
         else if (ingredientController.ingredient == level.instructions[2].correctIngredient)
         {
             // trigger the 'correct' animation HERE
-            CauldronAnim.SetTrigger("PotionCorrect");
+            CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book
         }
