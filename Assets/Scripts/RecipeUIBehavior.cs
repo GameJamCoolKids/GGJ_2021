@@ -41,6 +41,7 @@ public class RecipeUIBehavior : MonoBehaviour
         if (Input.GetKeyDown("tab"))
         {
             RecipeUI.SetActive(!RecipeUI.activeInHierarchy);
+            audioController.BookFlip.PlayOneShot(audioController.BookFlip.clip);
         }
 
 
