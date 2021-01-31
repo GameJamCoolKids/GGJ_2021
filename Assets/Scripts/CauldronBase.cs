@@ -14,23 +14,29 @@ public class CauldronBase : MonoBehaviour
     {
         LevelDefinition level = gameController.GetCurrentLevel();
         Ingredient ingredientController = collision.gameObject.GetComponent<Ingredient>();
-        if (ingredientController.ingredient == level.instructions[0].correctIngredient)
+        if (ingredientController.ingredient == level.instructions[0].correctIngredient
+            && gameController.IsInstruction1Solved() == false)
         {
             gameController.IncrementCorrectAnswers();
+            gameController.SetInstruction1Solved();
             CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book animation here
         }
-        else if (ingredientController.ingredient == level.instructions[1].correctIngredient)
+        else if (ingredientController.ingredient == level.instructions[1].correctIngredient
+                 && gameController.IsInstruction2Solved() == false)
         {
             gameController.IncrementCorrectAnswers();
+            gameController.SetInstruction2Solved();
             CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book animation here
         }
-        else if (ingredientController.ingredient == level.instructions[2].correctIngredient)
+        else if (ingredientController.ingredient == level.instructions[2].correctIngredient
+                 && gameController.IsInstruction3Solved() == false)
         {
             gameController.IncrementCorrectAnswers();
+            gameController.SetInstruction3Solved();
             CauldronAnim.SetTrigger("Potion_Correct");
             Debug.Log("Correct Ingredient Detected");
             // trigger mark off of of book animation here
