@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public List<LevelDefinition> levels;
     public GameObject levelEndPopUp;
+    public GameObject EndScreen;
     [HideInInspector] public LevelDefinition currentLevel;
     [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
     [HideInInspector] public int correctAnswers; // number of correct answers per level
@@ -39,6 +40,13 @@ public class GameController : MonoBehaviour
                     currentLevel = levels[nextLevel];
                     StartLevel(currentLevel);
                 }
+
+                if (nextLevel == levels.Count)
+                {
+                    EndScreen.SetActive(true);
+
+                }
+
             }
             else // defeat
             {
