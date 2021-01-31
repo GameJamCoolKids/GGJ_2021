@@ -23,4 +23,10 @@ public class Ingredient : MonoBehaviour
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
     }
+
+    // Disable the behaviour when it becomes invisible...
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }
