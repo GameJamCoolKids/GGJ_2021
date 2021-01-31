@@ -9986,7 +9986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
-  CauldronAnim: {fileID: 0}
+  CauldronAnim: {fileID: 6899284990936560929}
 --- !u!61 &3530541675854890365
 BoxCollider2D:
   m_ObjectHideFlags: 0
