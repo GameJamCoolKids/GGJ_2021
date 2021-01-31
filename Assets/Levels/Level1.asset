@@ -17,9 +17,6 @@ MonoBehaviour:
   - instruction: -Its not very often I get to use these
     hint: I once gave this to a suspected werewolf, they holwed!
     correctIngredient: 17
-  - instruction: -Small hats for the forest folk
-    hint: Some say they are stools for fairies. Thats a common misnomer.
-    correctIngredient: 5
   - instruction: -I get hot just looking at them
     hint: They sure are sweet though
     correctIngredient: 18
