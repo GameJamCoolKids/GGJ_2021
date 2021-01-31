@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d693760d36b78c149a9488e47475bcd8, type: 3}
   m_Name: Level5
   m_EditorClassIdentifier: 
-  levelOrder: 5
+  levelOrder: 4
   instructions:
   - instruction: '- I mean to make more but I keep putting it off for later'
     hint: They make my teeth hurt.

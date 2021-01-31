@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d693760d36b78c149a9488e47475bcd8, type: 3}
   m_Name: Level7
   m_EditorClassIdentifier: 
-  levelOrder: 7
+  levelOrder: 6
   instructions:
   - instruction: '- Balloon popper for the short giraffes'
     hint: It pokes holes in all the hats they wear.
