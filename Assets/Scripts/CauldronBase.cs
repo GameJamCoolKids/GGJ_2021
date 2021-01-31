@@ -13,7 +13,7 @@ public class CauldronBase : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         LevelDefinition level = gameController.GetCurrentLevel();
-        IngredientController ingredientController = collision.gameObject.GetComponent<IngredientController>();
+        Ingredient ingredientController = collision.gameObject.GetComponent<Ingredient>();
         if (ingredientController.ingredient == level.instructions[0].correctIngredient)
         {
             // trigger the 'correct' animation HERE
