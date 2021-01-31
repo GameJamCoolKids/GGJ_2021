@@ -365,6 +365,9 @@ MonoBehaviour:
   correctAnswers: 0
   playerWonLevel: 0
   levelFinished: 0
+  instruction1Solved: 0
+  instruction2Solved: 0
+  instruction3Solved: 0
 --- !u!4 &370790121
 Transform:
   m_ObjectHideFlags: 0
@@ -1879,10 +1882,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 168427824182422332, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 168427824182422332, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 197084596220368010, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.94
+      value: 2.41
       objectReference: {fileID: 0}
     - target: {fileID: 197084596220368010, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
@@ -1934,6 +1947,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364915913507732245, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364915913507732245, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 1897724522189955495, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
@@ -2040,6 +2063,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.28
       objectReference: {fileID: 0}
+    - target: {fileID: 4784165504912821295, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.79
+      objectReference: {fileID: 0}
     - target: {fileID: 5002308630908870617, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2078,7 +2106,7 @@ PrefabInstance:
     - target: {fileID: 6067765102235202894, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.17
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 6720909766990295674, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
@@ -2205,10 +2233,20 @@ PrefabInstance:
       propertyPath: audioController
       value: 
       objectReference: {fileID: 1379850899}
+    - target: {fileID: 8204712086868253338, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204712086868253338, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8215122798305856523, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.59
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 8215122798305856523, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
