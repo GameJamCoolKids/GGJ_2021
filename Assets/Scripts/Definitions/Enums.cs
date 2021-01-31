@@ -30,5 +30,6 @@ public static class Enums
         Muffin,
         Kale,
         Owlhoots,
+        Dentures,
     }
 }

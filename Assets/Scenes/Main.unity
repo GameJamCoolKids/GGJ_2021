@@ -1889,6 +1889,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.13
       objectReference: {fileID: 0}
+    - target: {fileID: 199072876963837587, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: ingredient
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 595196840172559444, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: audioController
@@ -1964,6 +1969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417916587004464725, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: ingredient
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4472651725234756937, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
@@ -2214,11 +2224,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 8424589118365142909, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8750093352626524590, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
