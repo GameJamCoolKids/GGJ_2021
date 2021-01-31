@@ -1209,6 +1209,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.13
       objectReference: {fileID: 0}
+    - target: {fileID: 595196840172559444, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
+        type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 1379850899}
     - target: {fileID: 1105719018169500736, guid: e3a94a73937c81647b5f9c3fc0b26d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
