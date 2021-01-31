@@ -46,7 +46,7 @@ public class RecipeUIBehavior : MonoBehaviour
         }
 
 
-        if(GameController.correctAnswers >= 3 || GameController.incorrectAttempts >= 3)
+        if(GameController.correctAnswers >= 2 || GameController.incorrectAttempts >= 3)
         {
             instruction1.color = new Color32(0, 0, 0, 255);
             instruction2.color = new Color32(0, 0, 0, 255);
