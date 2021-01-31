@@ -19,8 +19,7 @@ public class CauldronBase : MonoBehaviour
         {
             gameController.IncrementCorrectAnswers();
             gameController.SetInstruction1Solved();
-            CauldronAnim.SetTrigger("Potion_Correct");
-            Debug.Log("Correct Ingredient Detected");
+            TriggerCorrectAnimationTriage();
             // trigger mark off of of book animation here
         }
         else if (ingredientController.ingredient == level.instructions[1].correctIngredient
@@ -28,17 +27,7 @@ public class CauldronBase : MonoBehaviour
         {
             gameController.IncrementCorrectAnswers();
             gameController.SetInstruction2Solved();
-            CauldronAnim.SetTrigger("Potion_Correct");
-            Debug.Log("Correct Ingredient Detected");
-            // trigger mark off of of book animation here
-        }
-        else if (ingredientController.ingredient == level.instructions[2].correctIngredient
-                 && gameController.IsInstruction3Solved() == false)
-        {
-            gameController.IncrementCorrectAnswers();
-            gameController.SetInstruction3Solved();
-            CauldronAnim.SetTrigger("Potion_Correct");
-            Debug.Log("Correct Ingredient Detected");
+            TriggerCorrectAnimationTriage();
             // trigger mark off of of book animation here
         }
         else
@@ -47,8 +36,8 @@ public class CauldronBase : MonoBehaviour
             if (gameController.GetIncorrectAttempts() >= gameController.ATTEMPTS_UNTIL_GAME_OVER)
             {
                 // trigger the 'fail' animation HERE
-                CauldronAnim.SetTrigger("Potion_Incorrect");
-                Debug.Log("Incorrect Ingredient Detected");
+                CauldronAnim.SetTrigger("Level_Lost");
+                Debug.Log("Incorrect Ingredient Detected - 3 strikes and you're out!");
                 // trigger mark off of of book
             }
             else
@@ -58,6 +47,21 @@ public class CauldronBase : MonoBehaviour
                 Debug.Log("Incorrect Ingredient Detected");
                 // trigger mark off of of book
             }
+        }
+    }
+
+    // decides whether to trigger a Level_Won or Potion_Correct animation
+    private void TriggerCorrectAnimationTriage()
+    {
+        if (gameController.GetNumberOfCorrectAnswers() == 2)
+        {
+            CauldronAnim.SetTrigger("Level_Won");
+            Debug.Log("Correct Ingredient Detected");
+        }
+        else
+        {
+            CauldronAnim.SetTrigger("Potion_Correct");
+            Debug.Log("Correct Ingredient Detected");
         }
     }
 }
