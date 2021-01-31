@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
     [HideInInspector] public int correctAnswers; // number of correct answers per level
     [HideInInspector] public bool playerWonLevel;
     [HideInInspector] public bool levelFinished;
+    [HideInInspector] public bool instruction1Solved;
+    [HideInInspector] public bool instruction2Solved;
+    [HideInInspector] public bool instruction3Solved;
 
     private void Start()
     {
@@ -56,10 +59,13 @@ public class GameController : MonoBehaviour
             }
         }
     }
-    
+
     public void StartLevel(LevelDefinition level)
     {
         levelEndPopUp.SetActive(false); // reset
+        instruction1Solved = false;
+        instruction2Solved = false;
+        instruction3Solved = false;
         correctAnswers = 0; // reset
         incorrectAttempts = 0; // reset
         playerWonLevel = false; // reset
@@ -96,5 +102,35 @@ public class GameController : MonoBehaviour
     public bool IsLevelFinished()
     {
         return levelFinished;
+    }
+
+    public bool IsInstruction1Solved()
+    {
+        return instruction1Solved;
+    }
+
+    public bool IsInstruction2Solved()
+    {
+        return instruction2Solved;
+    }
+
+    public bool IsInstruction3Solved()
+    {
+        return instruction3Solved;
+    }
+
+    public void SetInstruction1Solved()
+    {
+        instruction1Solved = true;
+    }
+
+    public void SetInstruction2Solved()
+    {
+        instruction2Solved = true;
+    }
+
+    public void SetInstruction3Solved()
+    {
+        instruction3Solved = true;
     }
 }
