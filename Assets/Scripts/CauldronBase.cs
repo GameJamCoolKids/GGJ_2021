@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cauldron : MonoBehaviour
+public class CauldronBase : MonoBehaviour
 {
     public GameController gameController;
 
