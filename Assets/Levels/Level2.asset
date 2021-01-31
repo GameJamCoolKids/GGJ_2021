@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 2
   instructions:
-  - instruction: -I thought it was them the whole time but it turned out to be the
-      butler!
-    hint: 
+  - instruction: '- I thought it was them the whole time, but it turned out to be
+      the butler!'
+    hint: So cliche...
     correctIngredient: 15
-  - instruction: -Small hats for the forest folk
-    hint: Some say they are stools for fairies. That's a common misnomer.
+  - instruction: '- Small hats for the forest folk'
+    hint: Some say they are stools for fairies. That's a common misconception.
     correctIngredient: 5

@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 5
   instructions:
-  - instruction: -I mean to make more but I keep putting it off for later
-    hint: They make my teeth hurt
+  - instruction: '- I mean to make more but I keep putting it off for later'
+    hint: They make my teeth hurt.
     correctIngredient: 14
-  - instruction: -They needed to be changed so often because they get rusty very
-      fast
-    hint: How much running could they do underwater?
+  - instruction: '-  They need to be changed often because they get rusty fast'
+    hint: Pft, how much running could they do underwater?
     correctIngredient: 0
