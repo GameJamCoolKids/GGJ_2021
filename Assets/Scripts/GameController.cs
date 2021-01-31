@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            if (correctAnswers >= 3)
+            if (correctAnswers >= 2)
             {
                 levelFinished = true;
                 playerWonLevel = true;
@@ -68,7 +68,6 @@ public class GameController : MonoBehaviour
         levelEndPopUp.SetActive(false); // reset
         instruction1Solved = false;
         instruction2Solved = false;
-        instruction3Solved = false;
         correctAnswers = 0; // reset
         incorrectAttempts = 0; // reset
         playerWonLevel = false; // reset
@@ -116,11 +115,6 @@ public class GameController : MonoBehaviour
         return instruction2Solved;
     }
 
-    public bool IsInstruction3Solved()
-    {
-        return instruction3Solved;
-    }
-
     public void SetInstruction1Solved()
     {
         instruction1Solved = true;
@@ -129,10 +123,5 @@ public class GameController : MonoBehaviour
     public void SetInstruction2Solved()
     {
         instruction2Solved = true;
-    }
-
-    public void SetInstruction3Solved()
-    {
-        instruction3Solved = true;
     }
 }
