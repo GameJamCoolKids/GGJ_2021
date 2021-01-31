@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OwlController : MonoBehaviour
 {
+    public AudioController audioController;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,6 @@ public class OwlController : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Owl Clicked");
-
+        audioController.OwlHoot.PlayOneShot(audioController.OwlHoot.clip);
     }
 }
