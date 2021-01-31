@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
 
     public List<LevelDefinition> levels;
     public GameObject levelEndPopUp;
-    public Animator CauldronAnim;
     [HideInInspector] public LevelDefinition currentLevel;
     [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
     [HideInInspector] public int correctAnswers; // number of correct answers per level
@@ -30,21 +29,6 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (correctAnswers >= 3)
-        {
-            levelFinished = true;
-            playerWonLevel = true;
-            CauldronAnim.SetTrigger("Level_Won");
-            Debug.Log("Level Won");
-        }
-        else if (incorrectAttempts >= 3)
-        {
-            levelFinished = true;
-            playerWonLevel = false;
-            CauldronAnim.SetTrigger("Level_Lost");
-            Debug.Log("Level Lost");
-        }
-
         if (levelFinished)
         {
             if (playerWonLevel)
@@ -62,6 +46,21 @@ public class GameController : MonoBehaviour
                 // start level is called by pressing the TryAagain button in the UI after defeat
             }
         }
+        else
+        {
+            if (correctAnswers >= 3)
+            {
+                levelFinished = true;
+                playerWonLevel = true;
+                Debug.Log("Level Won");
+            }
+            else if (incorrectAttempts >= 3)
+            {
+                levelFinished = true;
+                playerWonLevel = false;
+                Debug.Log("Level Lost");
+            }
+        }
     }
 
     public void StartLevel(LevelDefinition level)
@@ -74,7 +73,6 @@ public class GameController : MonoBehaviour
         incorrectAttempts = 0; // reset
         playerWonLevel = false; // reset
         levelFinished = false; // reset
-        CauldronAnim.SetTrigger("BacktoNormal");
     }
 
     // current level that is active in the scene, can get currentLevel properties such as instructions, etc
