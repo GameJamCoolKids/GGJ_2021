@@ -389,7 +389,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 61269c7e7ce5e1e47aefe6b1de10833d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -600,6 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b48ebecf9f60ae4188e454297890c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioController: {fileID: 1379850899}
   RecipeUI: {fileID: 904153803}
   GameController: {fileID: 370790120}
   instruction1: {fileID: 685298948}

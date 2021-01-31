@@ -4,10 +4,8 @@ using TMPro;
 using UnityEngine;
 
 public class RecipeUIBehavior : MonoBehaviour
-
-
-    
 {
+    public AudioController audioController;
     public GameObject RecipeUI;
     public GameController GameController;
     public TextMeshProUGUI instruction1;
@@ -50,6 +48,7 @@ public class RecipeUIBehavior : MonoBehaviour
 
     private void OnMouseDown()
     {
+        audioController.BookFlip.PlayOneShot(audioController.BookFlip.clip);
         // Toggle the RecipeUI on/off based on mouse click
         RecipeUI.SetActive(!RecipeUI.activeInHierarchy);
 
