@@ -11,10 +11,36 @@ public class CauldronBase : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        LevelDefinition level = gameController.GetCurrentLevel();
         IngredientController ingredientController = collision.gameObject.GetComponent<IngredientController>();
-        if (ingredientController.ingredient == Enums.Ingredient.BadEgg)
+        if (ingredientController.ingredient == level.instructions[0].correctIngredient)
         {
-
+            // trigger the 'correct' animation HERE
+            // trigger mark off of of book
+        }
+        else if (ingredientController.ingredient == level.instructions[1].correctIngredient)
+        {
+            // trigger the 'correct' animation HERE
+            // trigger mark off of of book
+        }
+        else if (ingredientController.ingredient == level.instructions[2].correctIngredient)
+        {
+            // trigger the 'correct' animation HERE
+            // trigger mark off of of book
+        }
+        else
+        { // wrong answer
+            gameController.IncrementIncorrectAttempts();
+            if (gameController.GetIncorrectAttempts() >= gameController.ATTEMPTS_UNTIL_GAME_OVER)
+            {
+                // trigger the 'incorrect' animation HERE
+                // trigger mark off of of book
+            }
+            else
+            {
+                // trigger the 'dud' animation HERE
+                // trigger mark off of of book
+            }
         }
     }
 }
