@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 7
   instructions:
-  - instruction: -They look ok but I have always know they weren't right
-    hint: 
+  - instruction: '- They look okay but I have always known they weren''t right'
+    hint: On second thought, it's not the usual color...
     correctIngredient: 19
-  - instruction: -I was going to exchange them for pennies
-    hint: The piggy bank of the mind
+  - instruction: '- I was going to exchange them for pennies'
+    hint: The piggy bank of the mind.
     correctIngredient: 6

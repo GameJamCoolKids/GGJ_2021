@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 4
   instructions:
-  - instruction: -A companion for exploring indoor ponds
-    hint: 
+  - instruction: '- A companion for exploring indoor ponds'
+    hint: Too bad it doesn't taste good.
     correctIngredient: 20
-  - instruction: -I liked mine rare but these always tasted well done
-    hint: They broke Dracula's heart
+  - instruction: -I like mine rare but these always taste well done
+    hint: They broke Dracula's little heart.
     correctIngredient: 21
