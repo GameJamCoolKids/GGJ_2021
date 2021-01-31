@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public int ATTEMPTS_UNTIL_GAME_OVER = 3;
+
     public List<LevelDefinition> levels;
     [HideInInspector] public LevelDefinition currentLevel;
-    [HideInInspector] public int attempts; // the number of incorrect ingredient use attempts before game over
+    [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
     [HideInInspector] public bool playerWonLevel;
 
     private void Start()
@@ -23,6 +25,8 @@ public class GameController : MonoBehaviour
             if (nextLevel < levels.Count)
             {
                 currentLevel = levels[nextLevel];
+                incorrectAttempts = 0; // reset
+                playerWonLevel = false; // reset
                 StartLevel(currentLevel);
             }
         }
@@ -40,13 +44,13 @@ public class GameController : MonoBehaviour
         return currentLevel;
     }
 
-
-    // PLACEHOLDERS UNTIL WE GET THEM IMPLEMENTED IN OTHER SCRIPTS
-
-    // the script that deals with dropping ingredients into the pot will tell us whether the choice was correct
-    // this uses a method from that script
-    public bool IngredientChoiceIsIncorrect()
+    public void IncrementIncorrectAttempts()
     {
-        return false;
+        incorrectAttempts += 1;
+    }
+
+    public int GetIncorrectAttempts()
+    {
+        return incorrectAttempts;
     }
 }

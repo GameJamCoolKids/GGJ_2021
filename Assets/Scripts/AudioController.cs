@@ -5,6 +5,7 @@ public class AudioController : MonoBehaviour
 {
     public AudioSource LobbyMusic;
     public AudioSource BookFlip;
+    public AudioSource OwlHoot;
 
     private List<AudioSource> _soundEffects;
     private List<AudioSource> _music;
@@ -13,7 +14,7 @@ public class AudioController : MonoBehaviour
     {
         _soundEffects = new List<AudioSource>()
         {
-           BookFlip,
+           BookFlip, OwlHoot,
         };
 
         _music = new List<AudioSource>()
