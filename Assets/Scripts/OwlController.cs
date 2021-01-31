@@ -44,10 +44,27 @@ public class OwlController : MonoBehaviour
         hint3 = level.instructions[2].hint;
 
         // Get progress from game controller and pick the appropriate hint
-
-
         // Logic: pick the highest hint that the player hasn't correctly completed
-        
+
+
+        if (GameController.instruction1Solved.Equals(false))
+          {
+            current_hint = hint1;
+         }
+
+        else if(GameController.instruction2Solved.Equals(false))
+         {
+            current_hint = hint2;
+
+        }
+
+        else
+        {
+            current_hint = hint3;
+
+        }
+
+
 
         // Instantiating the text box for the hint
         // X = 3.78, Y = 3.86, Z = 18.4
