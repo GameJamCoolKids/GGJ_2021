@@ -358,8 +358,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1851e00f210160640af1debf33196bc6, type: 2}
   - {fileID: 11400000, guid: 02761b8d1a683c54b9a7dca9739836d5, type: 2}
   - {fileID: 11400000, guid: 27c98613b22133e4d8dcfd41c4c017e1, type: 2}
+  - {fileID: 11400000, guid: 6e623f8a51eea8845bb711f6796fd28a, type: 2}
+  - {fileID: 11400000, guid: 787af255b3a5b64448584228a09a0790, type: 2}
+  - {fileID: 11400000, guid: c3ee657fd5ac2064eaeb381612747aa0, type: 2}
   levelEndPopUp: {fileID: 1016790725}
-  CauldronAnim: {fileID: 6899284991847482652}
   currentLevel: {fileID: 0}
   incorrectAttempts: 0
   correctAnswers: 0
@@ -1869,12 +1871,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4af13a0291b9fbe49b323064462149fd, type: 3}
---- !u!95 &6899284991847482652 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6899284990936560929, guid: 4af13a0291b9fbe49b323064462149fd,
-    type: 3}
-  m_PrefabInstance: {fileID: 6899284991847482651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7757864455312328221
 PrefabInstance:
   m_ObjectHideFlags: 0

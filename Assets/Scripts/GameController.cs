@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public int ATTEMPTS_UNTIL_GAME_OVER = 3;
+    public int ATTEMPTS_UNTIL_GAME_OVER;
 
     public List<LevelDefinition> levels;
     public GameObject levelEndPopUp;
