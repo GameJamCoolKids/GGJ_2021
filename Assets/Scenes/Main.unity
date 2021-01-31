@@ -978,6 +978,11 @@ PrefabInstance:
       propertyPath: GameController
       value: 
       objectReference: {fileID: 370790120}
+    - target: {fileID: 333997899301695437, guid: b6ecdc41e9e72694ea2e83ddcf2b33f8,
+        type: 3}
+      propertyPath: RecipeUI
+      value: 
+      objectReference: {fileID: 1810348042}
     - target: {fileID: 333997899694297457, guid: b6ecdc41e9e72694ea2e83ddcf2b33f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1150,6 +1155,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ecdc41e9e72694ea2e83ddcf2b33f8, type: 3}
+--- !u!1 &1810348042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4116195478651705321, guid: b6ecdc41e9e72694ea2e83ddcf2b33f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1810348041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7757864455312328221
 PrefabInstance:
   m_ObjectHideFlags: 0
