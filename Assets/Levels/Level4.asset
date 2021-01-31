@@ -15,8 +15,8 @@ MonoBehaviour:
   levelOrder: 4
   instructions:
   - instruction: -A companion for exploring indoor ponds
-    hint: it was easy getting them from chicken or buffalo
-    correctIngredient: 7
+    hint: 
+    correctIngredient: 20
   - instruction: -I liked mine rare but these always tasted well done
-    hint: Not reccomended for eating
+    hint: They broke Dracula's heart
     correctIngredient: 21
