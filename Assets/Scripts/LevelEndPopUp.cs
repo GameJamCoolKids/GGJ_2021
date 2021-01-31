@@ -14,9 +14,13 @@ public class LevelEndPopUp : MonoBehaviour
 
     private void Start()
     {
-        screenDimmer.SetActive(true);
         button.onClick.AddListener(delegate {
             gameController.StartLevel(gameController.GetCurrentLevel()); });
+    }
+
+    private void OnEnable()
+    {
+        screenDimmer.SetActive(true);
     }
 
     private void OnDisable()
