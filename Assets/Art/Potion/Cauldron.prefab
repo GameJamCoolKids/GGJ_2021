@@ -9853,6 +9853,7 @@ GameObject:
   - component: {fileID: 6669691071894320418}
   - component: {fileID: 2570061958893797679}
   - component: {fileID: 6236545527459181553}
+  - component: {fileID: 8016459941294796729}
   m_Layer: 0
   m_Name: CauldronBase
   m_TagString: Untagged
@@ -9936,6 +9937,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243b514934c2ec248affb3702d8013f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+--- !u!61 &8016459941294796729
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244400465759270745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.79, y: 3.4}
+    newSize: {x: 7.79, y: 3.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.79, y: 3.4}
+  m_EdgeRadius: 0
 --- !u!1 &8643046472736315043
 GameObject:
   m_ObjectHideFlags: 0
