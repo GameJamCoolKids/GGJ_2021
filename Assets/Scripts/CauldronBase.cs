@@ -44,14 +44,12 @@ public class CauldronBase : MonoBehaviour
             {
                 // trigger the 'fail' animation HERE
                 CauldronAnim.SetTrigger("Level_Lost");
-                Debug.Log("Incorrect Ingredient Detected - 3 strikes and you're out!");
                 // trigger mark off of of book
             }
             else
             {
                 // trigger the 'incorret' animation HERE
                 CauldronAnim.SetTrigger("Potion_Incorrect");
-                Debug.Log("Incorrect Ingredient Detected");
                 // trigger mark off of of book
             }
         }
@@ -63,12 +61,10 @@ public class CauldronBase : MonoBehaviour
         if (gameController.GetNumberOfCorrectAnswers() == 2)
         {
             CauldronAnim.SetTrigger("Level_Won");
-            Debug.Log("Correct Ingredient Detected");
         }
         else
         {
             CauldronAnim.SetTrigger("Potion_Correct");
-            Debug.Log("Correct Ingredient Detected");
         }
     }
 }
