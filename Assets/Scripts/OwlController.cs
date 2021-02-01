@@ -29,7 +29,6 @@ public class OwlController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Owl Clicked");
         if (collider_switch == false)
         {
             return;
