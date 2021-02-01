@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class GameController : MonoBehaviour
 
     public List<LevelDefinition> levels;
     public GameObject levelEndPopUp;
+    public GameObject EndScreen;
+    public GameObject IntroSequence;
+    public Button gameStartButton;
+    public GameObject director;
     [HideInInspector] public LevelDefinition currentLevel;
     [HideInInspector] public int incorrectAttempts; // the number of incorrect ingredient use attempts before game over PER LEVEL
     [HideInInspector] public int correctAnswers; // number of correct answers per level
@@ -19,6 +24,9 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        IntroSequence.SetActive(true);
+        director.SetActive(true);
+        gameStartButton.onClick.AddListener(DeactivateIntroTimeline);
         correctAnswers = 0;
         incorrectAttempts = 0;
         levelFinished = false;
@@ -39,6 +47,13 @@ public class GameController : MonoBehaviour
                     currentLevel = levels[nextLevel];
                     StartLevel(currentLevel);
                 }
+
+                if (nextLevel == levels.Count)
+                {
+                    EndScreen.SetActive(true);
+
+                }
+
             }
             else // defeat
             {
@@ -61,6 +76,13 @@ public class GameController : MonoBehaviour
                 Debug.Log("Level Lost");
             }
         }
+    }
+
+    private void DeactivateIntroTimeline()
+    {
+        director.SetActive(false);
+        IntroSequence.SetActive(false);
+        gameStartButton.gameObject.SetActive(false);
     }
 
     public void StartLevel(LevelDefinition level)
