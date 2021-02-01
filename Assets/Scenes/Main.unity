@@ -363,6 +363,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c3ee657fd5ac2064eaeb381612747aa0, type: 2}
   levelEndPopUp: {fileID: 1016790725}
   EndScreen: {fileID: 0}
+  IntroSequence: {fileID: 0}
+  gameStartButton: {fileID: 0}
+  director: {fileID: 0}
   currentLevel: {fileID: 0}
   incorrectAttempts: 0
   correctAnswers: 0
@@ -2134,6 +2137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 2557157018184432933, guid: aecd55deb0bfeda40bc0466b245db2cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4760042723904387935, guid: aecd55deb0bfeda40bc0466b245db2cc,
         type: 3}
       propertyPath: m_text
@@ -2263,7 +2271,7 @@ PrefabInstance:
     - target: {fileID: 686724856926230075, guid: 8622fb53bc085834182125ed7bc3684c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4384410211576270868, guid: 8622fb53bc085834182125ed7bc3684c,
         type: 3}
