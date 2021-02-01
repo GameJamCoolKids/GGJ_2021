@@ -9,16 +9,19 @@ public class CauldronBase : MonoBehaviour
 {
     public GameController gameController;
     public Animator CauldronAnim;
-    public AudioSource audioSource;
+    public AudioSource plop;
+    public AudioSource correct;
+    public AudioSource incorrect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        audioSource.PlayOneShot(audioSource.clip);
+        plop.PlayOneShot(plop.clip);
         LevelDefinition level = gameController.GetCurrentLevel();
         Ingredient ingredientController = collision.gameObject.GetComponent<Ingredient>();
         if (ingredientController.ingredient == level.instructions[0].correctIngredient
             && gameController.IsInstruction1Solved() == false)
         {
+            correct.PlayOneShot(correct.clip);
             gameController.IncrementCorrectAnswers();
             gameController.SetInstruction1Solved();
             TriggerCorrectAnimationTriage();
@@ -27,6 +30,7 @@ public class CauldronBase : MonoBehaviour
         else if (ingredientController.ingredient == level.instructions[1].correctIngredient
                  && gameController.IsInstruction2Solved() == false)
         {
+            correct.PlayOneShot(correct.clip);
             gameController.IncrementCorrectAnswers();
             gameController.SetInstruction2Solved();
             TriggerCorrectAnimationTriage();
@@ -34,6 +38,7 @@ public class CauldronBase : MonoBehaviour
         }
         else
         { // wrong answer
+            incorrect.PlayOneShot(incorrect.clip);
             gameController.IncrementIncorrectAttempts();
             if (gameController.GetIncorrectAttempts() >= gameController.ATTEMPTS_UNTIL_GAME_OVER)
             {
