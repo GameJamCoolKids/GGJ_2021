@@ -187,6 +187,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &82300892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2557157018184432933, guid: aecd55deb0bfeda40bc0466b245db2cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 425122967090994296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329135052
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,10 +368,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 787af255b3a5b64448584228a09a0790, type: 2}
   - {fileID: 11400000, guid: c3ee657fd5ac2064eaeb381612747aa0, type: 2}
   levelEndPopUp: {fileID: 1016790725}
-  dimmer: {fileID: 1125124993}
-  EndScreen: {fileID: 0}
+  EndScreen: {fileID: 82300892}
   IntroSequence: {fileID: 2085477349840861831}
   gameStartButton: {fileID: 856888796}
+  director: {fileID: 1181291199}
   currentLevel: {fileID: 0}
   incorrectAttempts: 0
   correctAnswers: 0
