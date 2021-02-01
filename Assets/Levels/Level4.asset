@@ -15,8 +15,8 @@ MonoBehaviour:
   levelOrder: 3
   instructions:
   - instruction: '- A companion for exploring indoor ponds'
-    hint: Too bad it doesn't taste good.
+    hint: I could never be a water bird.
     correctIngredient: 20
   - instruction: -I like mine rare but these always taste well done
-    hint: They broke Dracula's little heart.
+    hint: I know Dracula's isn't a fan.
     correctIngredient: 21

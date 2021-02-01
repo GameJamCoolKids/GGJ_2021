@@ -18,5 +18,5 @@ MonoBehaviour:
     hint: It pokes holes in all the hats they wear.
     correctIngredient: 3
   - instruction: '- I was going to build my next house out of these.'
-    hint: A relic from the distant past of 1999.
+    hint: A relic from the far distant past of 1999.
     correctIngredient: 8

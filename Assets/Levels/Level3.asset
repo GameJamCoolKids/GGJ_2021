@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOrder: 2
   instructions:
-  - instruction: '- What is the best thing to put into pies?'
-    hint: Eww, I wouldn't touch those.
+  - instruction: '- My favourite thing to put into a pie.'
+    hint: Why would she keep them on the ground? So unsanitary...
     correctIngredient: 25
-  - instruction: "- Everything I buy doesn\u2019t have any, so i had to make my own"
+  - instruction: '- There are so many products without this, I had to stock my own!'
     hint: Seems like everyone is allergic to this these days...
     correctIngredient: 11
