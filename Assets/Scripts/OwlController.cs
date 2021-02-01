@@ -29,7 +29,6 @@ public class OwlController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Owl Clicked");
         if (collider_switch == false)
         {
             return;
@@ -61,7 +60,7 @@ public class OwlController : MonoBehaviour
 
         // Instantiating the text box for the hint
         // X = 3.78, Y = 3.86, Z = 18.4
-        GameObject instantiatedOwlText = Instantiate(textBoxPrefab, new Vector3(3.78f, 3.86f, 18.47f), Quaternion.identity);
+        GameObject instantiatedOwlText = Instantiate(textBoxPrefab, new Vector3(3.78f, 3.6f, 18.47f), Quaternion.identity);
         instantiatedOwlText.GetComponentInChildren<TextMeshProUGUI>().SetText(current_hint);
         Object.Destroy(instantiatedOwlText, 4.0f);
         StartCoroutine(OwlLag());
