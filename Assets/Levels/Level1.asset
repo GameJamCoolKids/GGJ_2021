@@ -15,8 +15,8 @@ MonoBehaviour:
   levelOrder: 0
   instructions:
   - instruction: '- It''s not very often that I get to use it...'
-    hint: I once gave this to a werewolf, he holwed!
+    hint: It smells like cheese.
     correctIngredient: 17
   - instruction: '- I get hot just looking at ''em!'
-    hint: They sure are sweet though.
+    hint: They sure are sweet.
     correctIngredient: 18
